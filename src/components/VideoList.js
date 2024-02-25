@@ -37,7 +37,6 @@ export const VideoList = ({ videoIds }) => {
       {videos.map((video) => (
         <div key={video.id} className="w-full md:w-1/2 lg:w-1/3 p-4">
           <VideoItem video={video} />
-          {/* <VideoItemHover video={video}/> */}
           <LikeButton videoId={video.id} />
         </div>
       ))}
